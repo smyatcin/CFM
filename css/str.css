@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/f.ttf);
+}
+
+body {
+	font-family: Roboto;
+	background-size: 100%;
+}
+
+main {
+	width: 70%;
+	margin: auto;
+	background-color: rgba(256, 256, 256, 0.4);
+	padding: 50px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+
+a {
+	color: #000000;
+	outline: none;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+.gallery {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.photo  {
+    width: 150px;
+    border: 1px solid #696969;
+    padding: 1px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+ 
+.gallery li {
+    position: relative;
+    width: 100px;
+}
+ 
+.gallery li div {
+    position: absolute;
+    top: 0px;
+    left: 174px;
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    -moz-border-radius: 0 10px 10px 10px; 
+    -webkit-border-radius: 0 10px 10px 10px;
+    z-index: 5;
+    display: none;
+}
+ 
+.gallery li div img {
+    width: 600px;
+    border: 2px solid #696969;
+    padding: 1px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+ 
+.gallery li:hover div {
+    display: block;
+    background: #696969;
+}
+ 
+.gallery li:hover .photo {
+    border: 1px solid #696969;
+    padding: 10px;
+    background: #696969;
+    border-right: 0;
+    }

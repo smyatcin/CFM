@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/f.ttf);
+}
+
+body {
+	font-family: Roboto;
+	background-size: 100%;
+}
+
+main {
+	width: 70%;
+	margin: auto;
+	background-color: rgba(256, 256, 256, 0.6);
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 48px;
+}
+
+a {
+	color: #000000;
+	outline: none;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.photo {
+	margin: 20px;
+	width: calc(50% - 40px);
+	height: calc((35vw - 40px) / 16 * 9);
+	position: relative;
+	perspective: 1000px;
+}
+
+.front , .back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backface-visibility: hidden;
+	transition: 1.5s;
+	border-radius: 10px;
+}
+
+.front {
+	background-position: center;
+	background-size: cover;
+}
+
+.back {
+	transform: rotateY(180deg);
+	background-position: center;
+	background-size: cover;
+}
+
+.back a {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    }
+
+.photo:hover .front {transform: rotateY(180deg);}
+.photo:hover .back {transform: rotateY(360deg);}
+
+.photf1 {
+	background-image: url(../img/main/front/img1.jpg);
+}
+
+.photf2 {
+	background-image: url(../img/main/front/img2.jpg);
+}
+
+.photf3 {
+	background-image: url(../img/main/front/img3.jpg);
+}
+
+.photf4 {
+	background-image: url(../img/main/front/img4.jpg);
+}
+
+.photf5 {
+	background-image: url(../img/main/front/img5.jpg);
+}
+
+.photf6 {
+	background-image: url(../img/main/front/img6.jpg);
+}
+
+.photb1 {
+	background-image: url(../img/main/back/img1.png);
+}
+
+.photb2 {
+	background-image: url(../img/main/back/img2.png);
+}
+
+.photb3 {
+	background-image: url(../img/main/back/img3.png);
+}
+
+.photb4 {
+	background-image: url(../img/main/back/img4.png);
+}
+
+.photb5 {
+	background-image: url(../img/main/back/img5.png);
+}
+
+.photb6 {
+	background-image: url(../img/main/back/img6.png);
+}
